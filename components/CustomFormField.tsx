@@ -1,10 +1,8 @@
 "use client";
 
-import { Control, Controller } from "react-hook-form";
+import { Controller } from "react-hook-form";
 import {
   Field,
-  FieldDescription,
-  FieldError,
   FieldGroup,
   FieldLabel,
 } from "@/components/ui/field";
@@ -156,20 +154,7 @@ const CustomFormField = (props: CustomProps) => {
                   {label}
                 </FieldLabel>
               )}
-
               <RenderField field={field} props={props} />
-              {/* <Input
-                {...field}
-                id="form-rhf-input-username"
-                aria-invalid={fieldState.invalid}
-                placeholder="shadcn"
-                autoComplete="username"
-              /> */}
-              {/* <FieldDescription>
-                This is your public display name. Must be between 3 and 10
-                characters. Must only contain letters, numbers, and underscores.
-              </FieldDescription>
-              {fieldState.invalid && <FieldError errors={[fieldState.error]} />} */}
             </Field>
           )}
         />
